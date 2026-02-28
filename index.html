@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanjay S — Portfolio</title>
+  <meta name="description"
+    content="Sanjay S — IT Undergraduate, Cloud Security Intern at Zscaler, AI & Full Stack Developer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ─── NAVBAR ─── -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="nav-logo">Sanjay</a>
+    <button class="ham" id="ham" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ─── FULL-SCREEN MENU ─── -->
+  <div class="overlay-menu" id="overlayMenu">
+    <button class="overlay-close" id="overlayClose">✕</button>
+    <nav class="overlay-nav">
+      <a href="#home" class="overlay-link" data-num="01">Home</a>
+      <a href="#about" class="overlay-link" data-num="02">About</a>
+      <a href="#skills" class="overlay-link" data-num="03">Skills</a>
+      <a href="#experience" class="overlay-link" data-num="04">Experience</a>
+      <a href="#project" class="overlay-link" data-num="05">Project</a>
+      <a href="#contact" class="overlay-link" data-num="06">Contact</a>
+    </nav>
+    <div class="overlay-footer">
+      <a href="mailto:sanjayraghu886@gmail.com">sanjayraghu886@gmail.com</a>
+      <a href="tel:+917339111699">+91-7339111699</a>
+    </div>
+  </div>
+
+  <!-- ─── HERO (DARK) ─── -->
+  <section class="hero dark-section" id="home">
+    <div class="hero-label">IT Undergraduate &mdash; Tamil Nadu, India</div>
+
+    <!-- animated atmospheric blobs -->
+    <div class="smoke-wrap" aria-hidden="true">
+      <div class="smoke s1"></div>
+      <div class="smoke s2"></div>
+      <div class="smoke s3"></div>
+      <div class="smoke s4"></div>
+    </div>
+
+    <!-- background watermark -->
+    <div class="hero-wm" aria-hidden="true">SANJAY</div>
+
+    <!-- live clock -->
+    <div class="hero-clock">
+      <span id="clockDate"></span><br />
+      <span id="clockTime"></span>
+    </div>
+
+    <!-- headline -->
+    <div class="hero-headline-wrap">
+      <h1 class="hero-headline">
+        Built for <span class="orange">intelligent</span><br />
+        systems, crafted<br />
+        to <span class="orange">last.</span>
+      </h1>
+      <a href="#contact" class="btn-orange">Let's Connect</a>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT (LIGHT) ─── -->
+  <section class="about light-section" id="about">
+    <div class="wm-bg" aria-hidden="true">WHO I AM</div>
+    <div class="about-inner">
+      <div class="about-left">
+        <p class="section-label"><span class="dot"></span>About Me</p>
+        <h2 class="display-heading"><span class="orange">SANJAY</span><br />S.</h2>
+        <a href="#experience" class="btn-outline">My Journey &darr;</a>
+      </div>
+      <div class="about-right">
+        <p class="about-body">
+          <strong>Sanjay S</strong> is a motivated Information Technology undergraduate with strong programming
+          fundamentals and a solid understanding of software development principles.
+        </p>
+        <p class="about-body muted">
+          Experienced in cloud security at <strong>Zscaler</strong> and currently building an AI-powered geospatial
+          platform for forest land rights. Excellent logical thinking, problem-solving ability, and attention to detail.
+        </p>
+        <div class="edu-row">
+          <div class="edu-block">
+            <span class="edu-label">B.Tech IT</span>
+            <span class="edu-name">K S Rangasamy College of Technology</span>
+            <span class="edu-meta">Tiruchengode &bull; CGPA 6.22</span>
+          </div>
+          <div class="edu-block">
+            <span class="edu-label">HSLC</span>
+            <span class="edu-name">JKK Nataraja Matri Hr Sec School</span>
+            <span class="edu-meta">Kumarapalayam &bull; 61%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats bar -->
+    <div class="stats-bar">
+      <div class="stat-block">
+        <span class="stat-num">1</span>
+        <span class="stat-label">Internship Completed</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-block">
+        <span class="stat-num">1</span>
+        <span class="stat-label">AI Project Active</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-block">
+        <span class="stat-num">5+</span>
+        <span class="stat-label">Core Technologies</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-block">
+        <span class="stat-num">2025</span>
+        <span class="stat-label">Currently Active</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS (LIGHT) ─── -->
+  <section class="skills light-section" id="skills">
+    <div class="section-header-row">
+      <div>
+        <p class="section-label"><span class="dot"></span>My Skills</p>
+        <h2 class="display-heading"><span class="orange">TECHNICAL</span><br />EXPERTISE</h2>
+      </div>
+      <p class="section-sub">Programming, web technologies, cloud security, AI/ML tooling and Linux — applied across
+        real-world projects.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-box">
+        <div class="skill-box-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6" />
+            <polyline points="8 6 2 12 8 18" />
+          </svg>
+        </div>
+        <h3>Programming</h3>
+        <ul>
+          <li>Java</li>
+          <li>Python</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+      <div class="skill-box">
+        <div class="skill-box-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="2" y1="12" x2="22" y2="12" />
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+          </svg>
+        </div>
+        <h3>Web Development</h3>
+        <ul>
+          <li>HTML &amp; CSS</li>
+          <li>JavaScript</li>
+          <li>React JS</li>
+        </ul>
+      </div>
+      <div class="skill-box">
+        <div class="skill-box-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+          </svg>
+        </div>
+        <h3>Cloud &amp; Security</h3>
+        <ul>
+          <li>Zero Trust Architecture</li>
+          <li>Secure Web Gateways</li>
+          <li>Threat Prevention</li>
+        </ul>
+      </div>
+      <div class="skill-box">
+        <div class="skill-box-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2" />
+            <line x1="8" y1="21" x2="16" y2="21" />
+            <line x1="12" y1="17" x2="12" y2="21" />
+          </svg>
+        </div>
+        <h3>Tools &amp; Systems</h3>
+        <ul>
+          <li>Linux Commands</li>
+          <li>Data Structures &amp; Algorithms</li>
+          <li>TensorFlow / PostGIS / GEE</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Marquee tech strip -->
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span>Java</span><span class="sep">&bull;</span>
+        <span>React JS</span><span class="sep">&bull;</span>
+        <span>Python</span><span class="sep">&bull;</span>
+        <span>SQL</span><span class="sep">&bull;</span>
+        <span>TensorFlow</span><span class="sep">&bull;</span>
+        <span>PostGIS</span><span class="sep">&bull;</span>
+        <span>Google Earth Engine</span><span class="sep">&bull;</span>
+        <span>Linux</span><span class="sep">&bull;</span>
+        <span>DSA</span><span class="sep">&bull;</span>
+        <span>Zero Trust</span><span class="sep">&bull;</span>
+        <span>HTML &amp; CSS</span><span class="sep">&bull;</span>
+        <span>JavaScript</span><span class="sep">&bull;</span>
+        <!-- duplicate for seamless loop -->
+        <span>Java</span><span class="sep">&bull;</span>
+        <span>React JS</span><span class="sep">&bull;</span>
+        <span>Python</span><span class="sep">&bull;</span>
+        <span>SQL</span><span class="sep">&bull;</span>
+        <span>TensorFlow</span><span class="sep">&bull;</span>
+        <span>PostGIS</span><span class="sep">&bull;</span>
+        <span>Google Earth Engine</span><span class="sep">&bull;</span>
+        <span>Linux</span><span class="sep">&bull;</span>
+        <span>DSA</span><span class="sep">&bull;</span>
+        <span>Zero Trust</span><span class="sep">&bull;</span>
+        <span>HTML &amp; CSS</span><span class="sep">&bull;</span>
+        <span>JavaScript</span><span class="sep">&bull;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE (DARK) ─── -->
+  <section class="experience dark-section" id="experience">
+    <div class="wm-bg light-wm" aria-hidden="true">EXPERIENCE</div>
+    <div class="exp-inner">
+      <div class="exp-left">
+        <p class="section-label light-label"><span class="dot orange-dot"></span>Work History</p>
+        <h2 class="display-heading white-heading"><span class="orange">CLOUD</span><br />SECURITY<br />INTERN</h2>
+      </div>
+      <div class="exp-right">
+        <div class="exp-card">
+          <div class="exp-card-top">
+            <div>
+              <h3 class="exp-company">Zscaler</h3>
+              <p class="exp-role">Cloud Security Intern</p>
+            </div>
+            <span class="exp-period">April – June 2025</span>
+          </div>
+          <div class="exp-tags">
+            <span>Zscaler</span><span>Cloud Security</span><span>Zero Trust</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Gained foundational knowledge of cloud security and Zero Trust Architecture</li>
+            <li>Learned about secure web gateways, access control, and threat prevention</li>
+            <li>Developed understanding of enterprise cybersecurity best practices</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECT (DARK) ─── -->
+  <section class="project dark-section" id="project">
+    <div class="wm-bg light-wm" aria-hidden="true" id="projectWm">PROJECT</div>
+    <div class="proj-header">
+      <p class="section-label light-label"><span class="dot orange-dot"></span>What I've Built</p>
+    </div>
+    <div class="proj-card">
+      <div class="proj-card-left">
+        <p class="proj-year">2025 – Present</p>
+        <h2 class="proj-title">AI-POWERED<br />FOREST LAND<br />RIGHTS SYSTEM</h2>
+        <p class="proj-subtitle">Geospatial AI Platform</p>
+        <div class="proj-tags-row">
+          <span>Python</span><span>|</span>
+          <span>React.js</span><span>|</span>
+          <span>TensorFlow</span><span>|</span>
+          <span>PostGIS</span><span>|</span>
+          <span>Google Earth Engine</span>
+        </div>
+      </div>
+      <div class="proj-card-right">
+        <div class="proj-visual">
+          <div class="proj-orb-bg"></div>
+          <div class="proj-content-display">
+            <div class="proj-display-inner">
+              <div class="proj-display-dot active"></div>
+              <div class="proj-display-dot"></div>
+              <div class="proj-display-dot"></div>
+            </div>
+            <p class="proj-display-text">Patta &amp; Chitta Forecasting</p>
+            <p class="proj-display-sub">Satellite change detection &bull; FRA Claims automation</p>
+            <div class="proj-badges">
+              <span>🌏 Geospatial AI</span>
+              <span>🛰 Satellite CV</span>
+              <span>⚖ FRA Claims</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="proj-desc-row">
+      <p>A geospatial artificial intelligence platform that uses topographical data and historical satellite imagery to
+        forecast <strong>Patta</strong> (ownership) and <strong>Chitta</strong> (land classification) — enabling
+        automated proof of land occupancy for Forest Rights Act (FRA) claims.</p>
+      <a href="#contact" class="btn-orange">Discuss Project</a>
+    </div>
+  </section>
+
+  <!-- ─── CTA SECTION (FLOATING CARD) ─── -->
+  <section class="cta-section" id="contact">
+    <div class="cta-card reveal-x">
+      <div class="cta-content">
+        <p class="cta-label">Experience excellence</p>
+        <h2 class="cta-title">Let's work <span class="orange">together</span></h2>
+        <p class="cta-subtext">Open to internships, full-time roles, and exciting collaborations.</p>
+        <a href="mailto:sanjayraghu886@gmail.com" class="btn-pill">Get in touch</a>
+      </div>
+      <div class="cta-visual">
+        <div class="globe-mesh"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER SECTION (BLACK) ─── -->
+  <footer class="footer-section">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Contact -->
+        <div class="footer-col reveal-x">
+          <h3 class="footer-logo">Sanjay</h3>
+          <div class="contact-info">
+            <p class="info-label">Address</p>
+            <p class="info-val">Tamil Nadu, India</p>
+
+            <p class="info-label">Phone</p>
+            <a href="tel:+917339111699" class="info-val bold-val">+91-7339111699</a>
+
+            <p class="info-label">Email</p>
+            <a href="mailto:sanjayraghu886@gmail.com" class="info-val bold-val">sanjayraghu886@gmail.com</a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col reveal-x delay-1">
+          <p class="col-header">Quick links</p>
+          <ul class="footer-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#project">Projects</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Social -->
+        <div class="footer-col reveal-x delay-2">
+          <p class="col-header">Social</p>
+          <ul class="footer-list">
+            <li><a href="https://www.linkedin.com/in/sanjay-s" target="_blank">LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Status -->
+        <div class="footer-col reveal-x delay-3">
+          <p class="col-header">Status</p>
+          <p class="footer-status"><span class="status-dot"></span> Available for work</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2025 Sanjay S. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
